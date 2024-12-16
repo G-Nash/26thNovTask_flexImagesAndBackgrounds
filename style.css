@@ -1,0 +1,143 @@
+body{
+    background-color: black;
+    color: white;
+
+    box-sizing: border-box;
+}
+
+
+.heading{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container{
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+    max-width: 90vw;
+
+    margin: auto;
+    margin-top: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    gap: 1rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.divs{
+    flex-basis: 350px;
+    min-height: 350px;
+
+    border: solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+
+    border-radius: 10px;
+}
+
+
+#div1{
+    flex-grow: 1;
+
+    background-image: url(./imgs/img1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div2{
+    flex-shrink: 1;
+
+    background-image: url(./imgs/img2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div3{
+    flex-shrink: 2;
+
+    background-image: url(./imgs/img3.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div4{
+    flex-grow: 2;
+
+    background-image: url(./imgs/img4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div5{
+    align-self: flex-start;
+    flex-basis: 500px;
+    flex-grow: 3;
+
+
+    background-image: url(./imgs/img5.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:320px) {
+    #div1{
+        background-image: url(./imgs/img5.webp);
+    }
+
+    #div2{
+        background-image: url(./imgs/img4.jpeg);
+    }
+
+    #div3{
+        background-image: url(./imgs/img3.jpeg);
+    }
+
+    #div4{
+        background-image: url(./imgs/img2.webp);
+    }
+
+    #div5{
+        background-image: url(./imgs/img1.webp);
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:720px) {
+    #div1{
+        background-image: url(./imgs/img4.jpeg);
+    }
+
+    #div2{
+        background-image: url(./imgs/img3.jpeg);
+    }
+
+    #div3{
+        background-image: url(./imgs/img3.jpeg);
+    }
+
+    #div4{
+        background-image: url(./imgs/img1.webp);
+    }
+
+    #div5{
+        background-image: url(./imgs/img5.webp);
+    }
+}
